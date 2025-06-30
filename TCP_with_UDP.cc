@@ -232,7 +232,7 @@ main(int argc, char* argv[])
     rmt1.SetTos(0xb8);
     AddressValue remoteAddress1(rmt1);
     onoff1.SetAttribute("Remote", remoteAddress1);
-    apps1.Add(onoff.Install(nodes.Get(3)));
+    apps1.Add(onoff1.Install(nodes.Get(3)));
     apps1.Start(Seconds(1.0));
     apps1.Stop(Seconds(simulationTime + 0.1));
     
